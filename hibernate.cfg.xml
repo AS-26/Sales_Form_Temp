@@ -1,0 +1,16 @@
+<!-- hibernate.cfg.xml -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">your_database_driver</property>
+        <property name="hibernate.connection.url">your_database_url</property>
+        <property name="hibernate.connection.username">your_username</property>
+        <property name="hibernate.connection.password">your_password</property>
+
+        <!-- Hibernate dialect for your database -->
+        <property name="hibernate.dialect">org.hibernate.dialect.YourDialect</property>
+
+        <!-- Specify annotated class -->
+        <mapping class="your.package.name.SalesFormBean"/>
+    </session-factory>
+</hibernate-configuration>
